@@ -8,3 +8,4 @@ Shell permissions
 Give everyone execute permission
 user and group have no permissions while others have all permissions
 give -rwxr-x-wx permissions to hello
+10-mirror-permissions mirrors hello permissions to olleh
