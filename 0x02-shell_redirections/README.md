@@ -17,3 +17,4 @@ file 14 displays pattern of word root
 file 15 counts the lines with word bin 
 Prints word pattern and 3 next lines
 file 17 hides lines with pattern
+file 18 displays all lines of file starting with letter
