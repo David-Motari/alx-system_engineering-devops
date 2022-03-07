@@ -8,3 +8,4 @@ Display last 10 parts of a file
 7-file Creates file
 8-cwd_state output redirection
 File 9 duplicates the last line
+file 10 removes all js files
