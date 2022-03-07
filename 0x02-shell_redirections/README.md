@@ -5,3 +5,4 @@
 Display last 10 parts of a file
 5-firstlines Displays first 10 lines
 6-third_line Display third line
+7-file Creates file
