@@ -15,3 +15,4 @@ file 12 displays newest files
 File 13 displays unique lists from file 
 file 14 displays pattern of word root
 file 15 counts the lines with word bin 
+Prints word pattern and 3 next lines
