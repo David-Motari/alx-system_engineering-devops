@@ -12,3 +12,4 @@ file 10 removes all js files
 file 11 lists all directories and subdirectories
 11-directories Counts directories and subdirectories in current directory 
 file 12 displays newest files
+File 13 displays unique lists from file 
