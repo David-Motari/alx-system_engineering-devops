@@ -11,3 +11,4 @@ File 9 duplicates the last line
 file 10 removes all js files
 file 11 lists all directories and subdirectories
 11-directories Counts directories and subdirectories in current directory 
+file 12 displays newest files
