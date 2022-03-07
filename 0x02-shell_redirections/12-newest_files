@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -l --sort=time | head -n 10 | tail
+ls -1t | head -n 10
