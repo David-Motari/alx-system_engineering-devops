@@ -8,3 +8,4 @@ File 6 creates a local variable
 File 7 creates a global variable
 file 8 addition operation
 file 9 division operation
+File 10 is exponent operation
