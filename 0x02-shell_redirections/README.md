@@ -19,3 +19,4 @@ Prints word pattern and 3 next lines
 file 17 hides lines with pattern
 file 18 displays all lines of file starting with letter
 Replace letters
+Reverse inputs 
