@@ -9,3 +9,4 @@ File 7 creates a global variable
 file 8 addition operation
 file 9 division operation
 File 10 is exponent operation
+file 11 converts binary to decimal
