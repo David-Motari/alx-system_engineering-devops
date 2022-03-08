@@ -4,3 +4,4 @@ File 2 creates a PATH
 file 3 displays number of directories in PATHS
 file 4 displays global variables
 file 5 displays local and environment variables including functions
+File 6 creates a local variable
