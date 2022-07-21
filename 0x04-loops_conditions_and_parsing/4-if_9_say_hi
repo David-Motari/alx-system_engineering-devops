@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
+# for 9 and Hi!
 i='0'
 while ((i < 10)); do
 if ((i == 9)); then
