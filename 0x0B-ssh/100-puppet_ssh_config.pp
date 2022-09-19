@@ -2,7 +2,7 @@
 
 file_line{
   path    =>  '/etc/ssh/ssh_config',
-  line    =>  '    PassworAuthentication no',
+  line    =>  '    PasswordAuthentication no',
   replace =>  'true',
 }
 file_line{
