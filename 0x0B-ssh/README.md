@@ -9,4 +9,7 @@ You can access your server information in the my servers section of the intranet
 Note: Your server is configured with an Ubuntu 20.04 LTS environment.</p>
 
 <h3> File 0 </h3>
-* [0-use_a_private_key](./0-use_a_private_key) - uses ssh to connect to your server using the private key ~/.ssh/school with the user ubuntu.
+- <a href=""> 0-use_a_private_key</a> - uses ssh to connect to your server using the private key ~/.ssh/school with the user ubuntu.
+
+<h3> File 1 </h3>
+- <a href="./1-create_ssh_key_pair">1-create_ssh_key_pair</a> - Bash script that creates an RSA key pair.
