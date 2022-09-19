@@ -9,7 +9,17 @@ You can access your server information in the my servers section of the intranet
 Note: Your server is configured with an Ubuntu 20.04 LTS environment.</p>
 
 <h3> File 0 </h3>
-- <a href=""> 0-use_a_private_key</a> - uses ssh to connect to your server using the private key ~/.ssh/school with the user ubuntu.
+<ul>
+<li> <a href=""> 0-use_a_private_key</a> - uses ssh to connect to your server using the private key ~/.ssh/school with the user ubuntu.</li>
+</ul>
 
 <h3> File 1 </h3>
-- <a href="./1-create_ssh_key_pair">1-create_ssh_key_pair</a> - Bash script that creates an RSA key pair.
+<ul>
+<li> <a href="./1-create_ssh_key_pair">1-create_ssh_key_pair</a> - Bash script that creates an RSA key pair. </li>
+</ul>
+
+<h3> File 2 </h3>
+<ul>
+<li> <a href="./2-ssh_config">2-ssh_config</a> - SSH client configuration </li>
+</ul>
+
