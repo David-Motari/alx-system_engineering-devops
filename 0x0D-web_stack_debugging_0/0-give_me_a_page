@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Gets Apache to run on the container provided and returns a page containing
+# Hello Holberton when querying the root.
+service apache2 start
