@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Displays information about the subdomains.
+print_text()
+{
+      DIGT=$(dig "$DOMAIN" | awk '/ANSWER SECTION:/ { getline; print $4 }')
+      ADDRESS_WWW=$(dig +short "www."$DOMAIN | tail -n1)
+      echo "The subdomain www is a A record and points to $ADDRESS_WWW"
+      ADDRESS_LB=$(dig +short "lb-01."$DOMAIN | tail -n1)
+      echo "The subdomain lb-01 is a A record and points to $ADDRESS_LB"
+      ADDRESS_WEB1=$(dig +short "web-01."$DOMAIN | tail -n1)
+      echo "The subdomain web-01 is a A record and points to $ADDRESS_WEB1"
+      ADDRESS_WEB2=$(dig +short "web-02."$DOMAIN | tail -n1)
+      echo "The subdomain web-02 is a A record and points to $ADDRESS_WEB2"
+}
+if [ -z "$2" ]
+then
+      DOMAIN=$1
+      print_text $1 $DOMAIN
+else
+      PERIOD="."
+      DOMAIN=$2$PERIOD$1
+      ADDRESS=$(dig +short $DOMAIN | tail -n1)
+      echo "The subdomain $2 is a A record and points to $ADDRESS"
+fi
