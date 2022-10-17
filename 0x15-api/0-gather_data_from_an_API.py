@@ -10,7 +10,7 @@ from sys import argv
 
 def main():
     url = "https://jsonplaceholder.typicode.com/"
-    employeeId = int(argv[1])
+    employeeId = argv[1]
     rqst = requests.get(url + 'users/{}'.format(employeeId))
     employee = rqst.json()
     empName = employee.get('name')
