@@ -4,8 +4,8 @@
 returns information about his/her TODO list progress for a given employee ID
 using a REST API
 """
-from sys import argv
 import requests
+from sys import argv
 
 
 def main():
