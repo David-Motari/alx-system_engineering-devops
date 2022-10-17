@@ -10,16 +10,26 @@ from sys import argv
 
 def main():
     url = "https://jsonplaceholder.typicode.com/"
-    rqst = requests.get(url + "users/{}".format(argv[1]))
-    employee = rqst.json()
-    rqst2 = requests.get(url + "todos", params={"userId": argv[1]})
-    tasks = rqst2.json()
+    empId = argv[1]
+    employee = requests.get(url + "/users/{}".format(empId))
 
-    completed = [t.get("title") for t in tasks if t.get("completed") is True]
-    print("Employee {} is done with tasks({}/{}):".format(
-        employee.get("name"), len(completed), len(tasks)))
-    [print("\t {}".format(complete)) for complete in completed]
+    name = employee.json().get('name')
 
+    tasks = requests.get(url + 'todos').json()
+    totalTasks = 0
+    completed = 0
+
+    for task in tasks:
+        if task.get('userId') == int(empId):
+            totalTasks += 1
+            if task.get('completed'):
+                completed += 1
+
+    print('Employee {} is done with tasks({}/{}):'
+          .format(name, completed, totalTasks))
+
+    print('\n'.join(["\t " + task.get('title') for task in tasks
+          if task.get('userId') == int(empId) and task.get('completed')]))
 
 if __name__ == "__main__":
     main()
