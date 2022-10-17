@@ -8,7 +8,7 @@ import requests
 from sys import argv
 
 
-def main():
+if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/"
     empId = argv[1]
     employee = requests.get(url + "/users/{}".format(empId))
@@ -30,6 +30,3 @@ def main():
 
     print('\n'.join(["\t " + task.get('title') for task in tasks
           if task.get('userId') == int(empId) and task.get('completed')]))
-
-if __name__ == "__main__":
-    main()
