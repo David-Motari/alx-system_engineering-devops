@@ -11,7 +11,7 @@ from sys import argv
 def main():
     url = "https://jsonplaceholder.typicode.com/"
     employeeId = int(argv[1])
-    rqst = requests.get('{}user/{}'.format(url, employeeId))
+    rqst = requests.get('{}users/{}'.format(url, employeeId))
     employee = rqst.json()
     empName = employee.get('name')
     rqst2 = requests.get('{}todos'.format(url), params={'userId': employeeId})
