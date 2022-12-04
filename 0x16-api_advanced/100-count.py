@@ -1,23 +1,21 @@
 #!/usr/bin/python3
 """
-queries the Reddit API, parses the title of all hot articles,
-and prints a sorted count of given keywords (case-insensitive,
-delimited by spaces.
+Queries the Reddit API, parses the title of all hot articles
 """
 
 import requests
 
 
-url = 'http://reddit.com/r/{}/hot.json'.format(subreddit)
+base_url = 'http://reddit.com/r/{}/hot.json'
 
 
 def count_words(subreddit, word_list, hot_list=[], after=""):
     """
     all posts recursively
     """
-    headers = {'User-agent': 'karenahv'}
+    headers = {'User-agent': 'David-Motari'}
     params = {'t': all, 'after': after}
-    req = requests.get(url, headers=headers,
+    req = requests.get(base_url.format(subreddit), headers=headers,
                        params=params)
     if not req or req.status_code != 200:
         return None
